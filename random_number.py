@@ -9,7 +9,7 @@ class Commands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @bot.command()
+    @commands.command()
     async def nummer(self, ctx):  # Zufallszahl zwischen 1 und 1000
         mess = await ctx.send('Deine Zufallszahl wird generiert!')
         await asyncio.sleep(0.5)
